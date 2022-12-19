@@ -1,22 +1,9 @@
 import './console-polyfill'
-import Store from './store'
-import Reactor from './reactor'
-import Immutable from 'immutable'
-import { toJS, toImmutable, isImmutable } from './immutable-helpers'
-import { isKeyPath } from './key-path'
-import { isGetter } from './getter'
-import { LRUCache } from './reactor/cache'
-import createReactMixin from './create-react-mixin'
-
-export default {
-  Reactor,
-  Store,
-  Immutable,
-  isKeyPath,
-  isGetter,
-  toJS,
-  toImmutable,
-  isImmutable,
-  createReactMixin,
-  LRUCache,
-}
+export { default as Store } from './store'
+export { default as Reactor } from './reactor'
+export { default as Immutable } from 'immutable'
+export { toJS, toImmutable, isImmutable } from './immutable-helpers'
+export { isKeyPath } from './key-path'
+export { isGetter } from './getter'
+export { LRUCache } from './reactor/cache'
+export { default as createReactMixin } from './create-react-mixin'
